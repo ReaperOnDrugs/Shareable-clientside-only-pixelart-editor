@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+:root {
+    --dashCL: black;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+#spacer-left, #spacer-right {
+    height: 100vh;
+    width: calc((100vw - 100vh) / 2);
+}
+#spacer-left {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+#content {
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+}
+
+.cell:hover {
+    border: 1px dashed var(--dashCL);
+}
+
+#sharebtn {
+    position: absolute;
+    z-index: 10;
+    right: 5vh;
+    bottom: 5vh;
+    font-size: 5rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    transition: transform 0.05s linear;
+}
+#sharebtn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}

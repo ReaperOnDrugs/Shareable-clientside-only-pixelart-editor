@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bgColor: #080808;
+    --secondaryColor: #161616;
+    --highlightColor: #7036D0;
+}
+body {
+    background-color: var(--bgColor);
+    min-height: 100vh;
+}
+
+.light {
+    font-family: abLight;
+}
+.bold {
+    font-family: abBold;
+}
+
+@font-face {
+    font-family: abLight;
+    src: url("../assets/fonts/Abaddon\ Light.ttf");
+}
+@font-face {
+    font-family: abBold;
+    src: url("../assets/fonts/Abaddon\ Bold.ttf");
+}
+
+#titleContainer {
+    color: var(--highlightColor);
+    text-shadow: 0 0 1rem #783fd4;
+}
+.btn {
+    color: var(--highlightColor);
+    text-shadow: 0 0 0.3rem #783fd4;
+}
+
+#bigBtn {
+    border: 0.2rem solid var(--secondaryColor);
+    background: var(--bgColor);
+}
+
+#sharebtn {
+    background-color: var(--secondaryColor);
+    color: var(--highlightColor);
+    text-shadow: 0 0 0.3rem #783fd4;
+}
